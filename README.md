@@ -1,13 +1,13 @@
 # krackjack
 krackjack is a security tool webapp.
 
-exp.7 Lambda function "Hello World" using node/python/java
+exp.7 Lambda function "Hello World" using node/python/java & exp.9 "I got output"
 
 1. Create new function(author from scratch, func name, runtime:python 3.13, x86_64,new role)
 2. After create function dismiss pop-up, scroll to code source automatically code is visible, add: print("Hello World") below #TODO implement 
 3. Sholud be visible like this:
 4. # TODO implement
-    print("Hello World")
+    print("Hello World") / print("I got output")
 
 5.Change body: "hii"
 6.Click test, new test event appears, name the event & save it.
