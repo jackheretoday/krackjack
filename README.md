@@ -53,7 +53,7 @@ def lambda_handler(event, context):
 9.Goto bucket, view the object.
 10.Cloudwatch the logs group.
 
-exp.10 part-2
+exp.11 part-2
 Docker installation commands in ubuntu
 
 # Update package index
@@ -72,7 +72,7 @@ sudo usermod -aG docker $USER
 # Apply group changes (or logout/login)
 newgrp docker
 
-# Verify installation
+# Verify installation (exp.12 part-2)
 docker --version
 docker run hello-world
 
