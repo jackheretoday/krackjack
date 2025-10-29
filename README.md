@@ -52,4 +52,38 @@ def lambda_handler(event, context):
 8.status: success
 9.Goto bucket, view the object.
 10.Cloudwatch the logs group.
+
+exp.10 part-2
+Docker installation commands in ubuntu
+
+# Update package index
+sudo apt update
+
+# Install Docker
+sudo apt install -y docker.io
+
+# Start and enable Docker service
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Add your user to docker group (to run docker without sudo)
+sudo usermod -aG docker $USER
+
+# Apply group changes (or logout/login)
+newgrp docker
+
+# Verify installation
+docker --version
+docker run hello-world
+
+# Check if Docker service is running
+sudo systemctl status docker
+
+# Alternative shorter command
+systemctl is-active docker
+
+# Check if Docker is enabled to start on boot
+systemctl is-enabled docker
+
+
     
