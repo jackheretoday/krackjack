@@ -108,4 +108,22 @@ filename.tf
 7. terraform will create instance on EC2
 8. run terraform destroy
 
+exp.5 & 6 Sonarqube installation
+
+1. visit sonarqube website, downlaod community edition
+2. extract file in C drive
+3. set environment variable to path
+4. check jdk version 17 in path
+5. navigate to bin/windows-x86-64 folder
+6. open cmd as administrator, =paste in cmd, run StartSonar.bat
+7. download sonarscanner,extract in c drive, add its bin folder to env variable PATH
+8. goto browser
+9. open localhost http://localhost:9000
+10. admin , admin username & password
+11. create project , local project, name it: python/java
+12. follow default,create project, locally, generate, continue, other, windows, copy the generated code.
+13. make a folder in c-drive & open in vs code write python/java code & save.
+14. 
+15. 
+
     
