@@ -131,5 +131,31 @@ exp.5 & 6 Sonarqube installation
   -Dsonar.login=your_auth_token
 16. Goto localhost, analyzed project report should be visible.
 
+kubernetes mini kube install
+1. Create instance in EC2
+2. Make security group
+3. inbound & outbound rules, custom tcp port 8080, 0.0.0/0 , go to instance and connect.
+4. sudo apt-get update && sudo apt-get upgrade
+5. sudo apt update -y && sudo apt upgrade -y
+6.sudo apt update -y && sudo apt upgrade -y
+sudo apt install -y curl wget apt-transport-https ca-certificates conntrack
+sudo apt install -y docker.io
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+newgrp docker
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+minikube version
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+kubectl version --client
+minikube start --driver=docker
+minikube status
+kubectl get nodes
+minikube dashboard --url
+minikube stop
+minikube delete
 
     
