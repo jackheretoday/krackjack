@@ -123,7 +123,13 @@ exp.5 & 6 Sonarqube installation
 11. create project , local project, name it: python/java
 12. follow default,create project, locally, generate, continue, other, windows, copy the generated code.
 13. make a folder in c-drive & open in vs code write python/java code & save.
-14. 
-15. 
+14. run sonar-scanner.bat -h in cmd
+15. sonar-scanner \
+  -Dsonar.projectKey=your_project_key \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=your_auth_token
+16. Goto localhost, analyzed project report should be visible.
+
 
     
