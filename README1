@@ -1,1 +1,17 @@
 Hello World
+
+q3.Git on aws
+sudo apt update -y
+sudo apt install git -y
+git --version
+git status
+git log
+if want to login git;
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --list
+echo "Hello Git!" > test.txt
+git add test.txt
+git status
+
+
