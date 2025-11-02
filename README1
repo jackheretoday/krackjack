@@ -145,6 +145,71 @@ Click OK
 go to pipeline script type: print("Hello World")
 apply, save, check the build, go to console output
 
+actually, authentic way...
+
+Step 1: Create a Simple Hello World Project
+Example: hello.java
+java
+public class hello {
+    public static void main(String[] args) {
+      	 System.out.println("Hello World from Jenkins!");
+  	 }
+}
+
+Step 2: Create a GitHub Repo & Push Code
+bash
+git init
+git add .
+git commit m "Hello World project added"
+git remote add origin https://github.com/username/jenkinsdemo.git
+git push u origin master
+
+Step 3: Install Required Jenkins Plugins
+Go to:
+Jenkins → Manage Jenkins → Manage Plugins → Available
+Git plugin
+Pipeline plugin
+Maven Integration (if Java project)
+GitHub Integration plugin
+
+Step 4: Create a New Pipeline Job
+1. Go to Jenkins Dashboard
+2. Click New Item
+3. Enter job name → helloworldpipeline
+4. Select Pipeline → OK
+
+Step 5: Add Pipeline Script (Jenkinsfile)
+Inside Jenkins → Pipeline → Paste:
+groovy
+pipeline {
+  	 agent any
+  	  
+  	 stages {
+  	 	 	 stage('Clone Repo') {
+  	 	 	 	 	 steps {
+  	 	 	 	 	 	 	 git 'https://github.com/username/jenkinsdemo.git'
+  	 	 	 	 	 }
+  	 	 	 }
+  	 	 	 stage('Build') {
+  	 	 	 	 	 steps {
+  	 	 	 	 	 	 	 sh 'javac hello.java'
+  	 	 	 	 	 }
+  	 	 	 }
+  	 	 	 stage('Run') {
+  	 	 	 	 	 steps {
+  	 	 	 	 	 	 	 sh 'java hello'
+  	 	 	 	 	 }
+  	 	 	 }
+  	 }
+}
+If you're using Windows, replace sh with bat.
+
+Step 6: Run the Pipeline
+Click Build Now
+Console Output should show:
+Hello World from Jenkins!
+```
+
 q17. docker container, image website hosting.
 1.create ec2 instance, 
 Click on the Security tab
