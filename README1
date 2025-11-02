@@ -75,7 +75,7 @@ docker rm container_name
 # Remove running container (force)
 docker rm -f container_name
 
-q14.git commands from git cmd
+q14.git commands from project cmd & q15.meaningful message push to remote repo 
 1.Go to your project folder
 bash
 cd path/to/project
