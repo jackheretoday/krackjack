@@ -134,6 +134,16 @@ Important Notes
 
 q16.setup ci pipeline using jenkins, configure the pipeline to build a simple project("Hello World application)
 
+Go to Dashboard → Manage Jenkins → Plugins → Available Plugins, and install:
+Git Plugin
+Pipeline Plugin
+Blue Ocean Plugin (optional, for better UI)
+Go to Jenkins Dashboard → New Item
+Select “Pipeline”
+Enter a name, e.g. hello-world-pipeline
+Click OK
+go to pipeline script type: print("Hello World")
+apply, save, check the build, go to console output
 
 q17. docker container, image website hosting.
 1.create ec2 instance, 
