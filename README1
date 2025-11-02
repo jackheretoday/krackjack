@@ -118,6 +118,46 @@ Important Notes
 ✔ First push needs -u to set upstream
 ✔ If repo already has files, git pull before push
 
+q17. docker container, image website hosting.
+1.create ec2 instance, 
+Click on the Security tab
+Click on the Security Group link (e.g., sg-xxxxxxxxx)
+Add Inbound Rule
+Click Edit inbound rules
+Click Add rule
+Configure the new rule:
+Type: Custom TCP
+Port range: 8080
+Source: 0.0.0.0/0 (for public access) or Your IP (for restricted access)
+Description: Docker HTML App
+Click Save rules
+connect
+2.sudo apt update && sudo apt upgrade -y
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+mkdir ~/myhtmlapp
+cd ~/myhtmlapp
+vim index.html
+type basic html
+cd ..
+vim Dockerfile 
+paste: 
+# Use the official Nginx image
+FROM nginx:alpine
+
+# Copy the HTML file to the Nginx web directory
+COPY myhtmlapp/index.html /usr/share/nginx/html/index.html
+
+# Expose port 80
+EXPOSE 80
+
+3.
+ls -la
+sudo docker images
+sudo docker run -d -p 8080:80 --name my-htmlapp htmlapp:latest
+sudo docker ps
+curl http://localhost:8080
 
 
 
