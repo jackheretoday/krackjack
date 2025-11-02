@@ -58,6 +58,23 @@ sudo docker images
 #to delete specific image
 sudo docker rmi alpine:latest
 
+q13.basic docker commands
+q2.same then...
+#List running containers
+sudo docker ps
+# List all containers (including stopped)
+sudo docker ps -a
+# Start stopped container
+docker start container_name
+# Stop container
+docker stop container_name
+# Restart container
+docker restart container_name
+# Remove container
+docker rm container_name
+# Remove running container (force)
+docker rm -f container_name
+
 q14.git commands from git cmd
 1.Go to your project folder
 bash
