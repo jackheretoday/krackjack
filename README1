@@ -7,6 +7,8 @@ q1.AWS & putty connection
 4.open putty paste the public ip of instance, goto ssh, auth , credit, browse the saved puttygen.
 5.go to session save it, open,login as:ec2-user , pwd, whoami
 
+q2.=reffer q10. & q13.
+
 q3.Git on aws
 sudo apt update -y
 sudo apt install git -y
