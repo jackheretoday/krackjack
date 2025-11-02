@@ -56,8 +56,7 @@ nano index.html
 git add .
 git commit -m "Updated index.html"
 git push origin main
-
-q11.
+verify the changes on github repo.
 
 q12.pull docker images,list the docker images currently stored on your machine, remove an image that you no longer need
 1.create instance on EC2 as ubuntu
@@ -132,6 +131,9 @@ Important Notes
 ✔ GitHub now *rejects password login* → use *PAT (Personal Access Token)*
 ✔ First push needs -u to set upstream
 ✔ If repo already has files, git pull before push
+
+q16.setup ci pipeline using jenkins, configure the pipeline to build a simple project("Hello World application)
+
 
 q17. docker container, image website hosting.
 1.create ec2 instance, 
