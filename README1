@@ -44,6 +44,19 @@ sudo docker run hello-world #doubtful
 sudo docker pull alpine
 sudo docker images
 
+q11.git pull make changes then push.
+create project file, open in vscode
+sudo apt update -y
+sudo apt install git -y
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+git clone https://github.com/<username>/<repository>.git
+cd <repository>
+nano index.html
+git add .
+git commit -m "Updated index.html"
+git push origin main
+
 q11.
 
 q12.pull docker images,list the docker images currently stored on your machine, remove an image that you no longer need
