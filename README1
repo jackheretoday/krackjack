@@ -21,6 +21,28 @@ echo "Hello Git!" > test.txt
 git add test.txt
 git status
 
+q8. Build Pipeline project in Jenkins
+Go to Dashboard → Manage Jenkins → Plugins → Available Plugins, and install:
+Git Plugin
+Pipeline Plugin
+Blue Ocean Plugin (optional, for better UI)
+Go to Jenkins Dashboard → New Item
+Select “Pipeline”
+Enter a name, e.g. hello-world-pipeline
+Click OK
+go to pipeline script type: print("Hello World")
+apply, save, check the build, go to console output
+
+q9.GIT operations on local & remote repositories
+git init
+git add .
+git commit -m "Initial version"
+git branch -M main
+git remote add origin https://github.com/jackheretoday/DevOps_labs.git
+git push -u origin main
+git pull origin main
+git clone https://github.com/<username>/<repo-name>.git
+
 q10.Pull ubuntu image on docker & execute bash
 1.create instance on EC2 as ubuntu
 2.connect to instance & run commands:
@@ -133,20 +155,6 @@ Important Notes
 ✔ If repo already has files, git pull before push
 
 q16.setup ci pipeline using jenkins, configure the pipeline to build a simple project("Hello World application)
-
-Go to Dashboard → Manage Jenkins → Plugins → Available Plugins, and install:
-Git Plugin
-Pipeline Plugin
-Blue Ocean Plugin (optional, for better UI)
-Go to Jenkins Dashboard → New Item
-Select “Pipeline”
-Enter a name, e.g. hello-world-pipeline
-Click OK
-go to pipeline script type: print("Hello World")
-apply, save, check the build, go to console output
-
-actually, authentic way...
-
 Step 1: Create a Simple Hello World Project
 Example: hello.java
 java
