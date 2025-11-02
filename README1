@@ -44,6 +44,8 @@ sudo docker run hello-world #doubtful
 sudo docker pull alpine
 sudo docker images
 
+q11.
+
 q12.pull docker images,list the docker images currently stored on your machine, remove an image that you no longer need
 1.create instance on EC2 as ubuntu
 2.sudo apt-get update && sudo apt-get upgrade
