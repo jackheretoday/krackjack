@@ -14,4 +14,42 @@ echo "Hello Git!" > test.txt
 git add test.txt
 git status
 
+q10.Pull ubuntu image on docker & execute bash
+1.create instance on EC2 as ubuntu
+2.connect to instance & run commands:
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install docker.io -y
+sudo systemctl enable docker
+docker --version
+sudo docker info
+sudo docker images
+sudo docker pull ubuntu
+sudo docker images
+sudo docker run -it -d ubuntu
+sudo docker ps
+sudo docker ps -a
+sudo docker exec -it <container_id> bash
+pwd
+mkdir anyfolder
+ls
+exit
+sudo docker run hello-world #doubtful
+sudo docker pull alpine
+sudo docker images
+
+q12.pull docker images,list the docker images currently stored on your machine, remove an image that you no longer need
+1.create instance on EC2 as ubuntu
+2.sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install docker.io -y
+sudo systemctl enable docker
+docker --version
+sudo docker info
+sudo docker images
+sudo docker pull ubuntu
+sudo docker pull alpine
+sudo docker images
+
+
+
+
 
