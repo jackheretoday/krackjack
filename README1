@@ -48,7 +48,8 @@ sudo docker images
 sudo docker pull ubuntu
 sudo docker pull alpine
 sudo docker images
-
+#to delete specific image
+sudo docker rmi alpine:latest
 
 
 
