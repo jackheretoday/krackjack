@@ -58,6 +58,52 @@ sudo docker images
 #to delete specific image
 sudo docker rmi alpine:latest
 
+q14.git commands from git cmd
+1.Go to your project folder
+bash
+cd path/to/project
+2. Initialize Git repository
+bash
+git init
+This creates a .git folder and starts version control.
+3. Create a new file
+bash
+nano demo.txt
+(or touch demo.txt if you don’t want to open editor)
+Write anything → save & exit.
+4. Add the file to staging area
+bash
+git add demo.txt
+(or add everything → git add .)
+5. Commit the file with a message
+bash
+git commit -m "Added demo.txt file as initial commit"
+6. Add remote GitHub repo
+bash
+git remote add origin https://github.com/your-username/your-repo.git
+
+Check if remote is added:
+bash
+git remote -v
+7. Push changes to GitHub
+If branch is *master*:
+bash
+git push -u origin master
+
+If branch is *main*:
+bash
+git push -u origin main
+Final Output
+Initialized empty Git repository
+[master (root-commit) 1a2b3c4] Added demo.txt file...
+Important Notes
+✔ GitHub now *rejects password login* → use *PAT (Personal Access Token)*
+✔ First push needs -u to set upstream
+✔ If repo already has files, git pull before push
+
+
+
+
 
 
 
