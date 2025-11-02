@@ -1,5 +1,12 @@
 Hello World
 
+q1.AWS & putty connection
+1.create instance allow ssh connection in inbound rules custom 0.0.0/0 & download the security key in .ppk
+2.download putty if not available, open puttygen and load the downloaded key.
+3.save private key,without password, name the file,save it.
+4.open putty paste the public ip of instance, goto ssh, auth , credit, browse the saved puttygen.
+5.go to session save it, open,login as:ec2-user , pwd, whoami
+
 q3.Git on aws
 sudo apt update -y
 sudo apt install git -y
@@ -17,10 +24,10 @@ git status
 q10.Pull ubuntu image on docker & execute bash
 1.create instance on EC2 as ubuntu
 2.connect to instance & run commands:
-sudo apt-get update && sudo apt-get upgrade
+(q2.)sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install docker.io -y
 sudo systemctl enable docker
-docker --version
+docker --version //q2
 sudo docker info
 sudo docker images
 sudo docker pull ubuntu
