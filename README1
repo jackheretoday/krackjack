@@ -5,7 +5,7 @@ q1.AWS & putty connection
 2.download putty if not available, open puttygen and load the downloaded key.
 3.save private key,without password, name the file,save it.
 4.open putty paste the public ip of instance, goto ssh, auth , credit, browse the saved puttygen.
-5.go to session save it, open,login as:ec2-user , pwd, whoami
+5.go to session save it, open,login as: ubuntu/ec2-user , pwd, whoami
 
 q2.=reffer q10. & q13.
 
