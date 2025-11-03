@@ -43,7 +43,7 @@ copy paste java file in slave folder in workspace folder folder,
 build steps javac hello.java  ,java hello apply save, build now.
 
 q7.Run Selenium tests in Jenkins using Maven.
-new item, maven,  git->selenium, master, build-> pom.xml, apply save.
+new item, maven,  git->selenium git link, master, build-> pom.xml, apply save.
 
 q8. Build Pipeline project in Jenkins
 Go to Dashboard → Manage Jenkins → Plugins → Available Plugins, and install:
