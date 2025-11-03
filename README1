@@ -28,7 +28,7 @@ net start jenkins
 net stop jenkins
 
 q4.Compile project in Jenkins using Maven
-new item, freestyle, git-> repo link, master, 
+new item, freestyle, git-> https://github.com/rubenlagus/TelegramBots.git , master, 
 build step->invoke maven target,
 goal->compile , apply , save
 
