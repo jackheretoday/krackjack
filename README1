@@ -23,6 +23,28 @@ echo "Hello Git!" > test.txt
 git add test.txt
 git status
 
+to start jenkin:
+net start jenkins
+net stop jenkins
+
+q4.Compile project in Jenkins using Maven
+new item, freestyle, git-> repo link, master, 
+build step->invoke maven target,
+goal->compile , apply , save
+
+q5.Create slave node in Jenkins
+Settings, nodes, new node, name it,
+permanent agent, create,create folder in c drive,
+path copy, paste save, run from agent link copy paste in cmd.
+
+q6.Assign project to slace node & build project
+same steps, restrict where project can run, label selenium, 
+copy paste java file in slave folder in workspace folder folder,
+build steps javac hello.java  ,java hello apply save, build now.
+
+q7.Run Selenium tests in Jenkins using Maven.
+new item, maven,  git->selenium, master, build-> pom.xml, apply save.
+
 q8. Build Pipeline project in Jenkins
 Go to Dashboard → Manage Jenkins → Plugins → Available Plugins, and install:
 Git Plugin
